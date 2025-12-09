@@ -1,0 +1,139 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+.logo {
+  width: 200px;
+}
+
+.nav-items {
+  margin: 10px;
+}
+
+.nav-items > ul {
+  font-size: 24px;
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-items > ul > li {
+  padding: 10px;
+  margin: 10px;
+}
+
+.res-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16 px;
+}
+
+.res-card {
+  margin: 5px;
+  padding: 5px;
+  width: 200px;
+  background-color: #f0f0f0;
+}
+
+.res-container a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.res-card:hover {
+  cursor: pointer;
+  border: 1px solid black;
+}
+.search {
+  padding: 10px;
+}
+
+.res-logo {
+  width: 100%;
+}
+
+.filter-btn {
+  margin: 10px;
+}
+
+.cuisines {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shimmer-card {
+  margin: 20px;
+  width: 200px;
+  height: 400px;
+  background-color: #f0f0f0;
+}
+
+.login {
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.filter {
+  display: flex;
+}
+
+.menu-item-tile {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+  width: 60%;
+}
+
+.menu-item-info {
+  padding-right: 16px;
+  max-width: 70%;
+}
+
+.menu-item-info h3 {
+  margin: 0;
+}
+
+.menu-item-desc {
+  color: #555;
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.menu-item-price {
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.menu-item-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.add-btn {
+  margin-top: 8px;
+  padding: 6px 12px;
+  border: 1px solid green;
+  background: white;
+  color: green;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.user-card {
+  padding: 10px;
+  border: 1px solid black;
+}

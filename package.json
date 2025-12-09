@@ -1,0 +1,36 @@
+{
+  "name": "basics",
+  "version": "1.0.0",
+  "description": "React basics",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "Jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivanip2989/React.git"
+  },
+  "keywords": [],
+  "author": "shivani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shivanip2989/React/issues"
+  },
+  "homepage": "https://github.com/shivanip2989/React#readme",
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.17",
+    "@types/react": "^19.2.7",
+    "parcel": "^2.16.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.17"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.2"
+  },
+  "browsersList": [
+    "last 2 versions"
+  ]
+}
