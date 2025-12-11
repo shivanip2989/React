@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import User from "./User";
+import UserContext from "../utils/UserContext";
 
 class UserClass extends Component {
   constructor(props) {
     super(props);
-    console.log(props);
     this.state = {
       userInfo: {
         name: "dummy",
@@ -30,11 +30,16 @@ class UserClass extends Component {
   ComponentWillUnmount() {}
 
   render() {
-    const { name, location, avatar_url } = this.state.userInfo;
+    const { name, location } = this.state.userInfo;
     return (
       <div className="user-card">
-        <img src={avatar_url} />
+        {/*<img src={avatar_url} />*/}
         <h2>Name:{name}</h2>
+        <UserContext.Consumer>
+          {(data)=>{
+            console.log(data);
+            return <h3 className="font-bold">User:{data.loggedInUser}</h3>
+            }}</UserContext.Consumer>
         <h3>Location:{location}</h3>
       </div>
     );
