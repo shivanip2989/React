@@ -7,6 +7,7 @@ import RestaurantCategory from "./RestaurantCategory.js";
 
 const RestaurantMenu = () => {
   const [resInfo, setResInfo] = useState(null);
+  const [showIndex,setShowIndex]= useState(-1);
 
   const { resId } = useParams();
 
@@ -40,24 +41,15 @@ const RestaurantMenu = () => {
       <p className="font-bold text-lg">
         {cuisines.join(",")}-{costForTwoMessage}
       </p>
-      {categories.map((category) => (
+      {categories.map((category,index) => (
+        //controlled component
         <RestaurantCategory
           key={category.card.card.title}
           data={category?.card?.card}
+          showItems={index === showIndex ? true : false}
+          setshowIndex={()=>setShowIndex((prev)=>prev===index?-1:index)}
         />
       ))}
-      <h2>Menu</h2>
-      <ul>
-        {itemCards.map((item) => (
-          <MenuItemTile
-            key={item.card.info.id}
-            name={item.card.info.name}
-            price={item.card.info.price || item.card.info.defaultPrice}
-            description={item.card.info.description}
-            image={"https://media-assets.swiggy.com/" + item.card.info.imageId}
-          />
-        ))}
-      </ul>
     </div>
   );
 };
